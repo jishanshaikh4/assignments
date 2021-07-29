@@ -1,3 +1,6 @@
+// Last edit: Jul 29, 2021, 18:32:54 IST
+// codefactor minor changes
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -36,7 +39,7 @@ void makecycle(struct node **p){
   count++;
  }
  if (count)
-  n=rand() % count;
+  n=rand_r() % count;
  else
   n=1;
  
@@ -105,10 +108,3 @@ int main(){
  release (&p);
  return 0;
 }
-
-
-
-
-
-   
-
