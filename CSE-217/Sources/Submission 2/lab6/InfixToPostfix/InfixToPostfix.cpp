@@ -1,3 +1,6 @@
+// Last edit: Jul 29, 2021, 18:32:54 IST
+// codefactor minor changes
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -68,7 +71,6 @@ int infixToPostfix(char* exp){
 		return -1 ;
 
 	for (i = 0, k = -1; exp[i]; ++i){
-		
 		if (isOperand(exp[i]))
 			exp[++k] = exp[i];
 		
