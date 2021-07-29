@@ -1,3 +1,6 @@
+// Last edit: Jul 29, 2021, 18:32:54 IST
+// codefactor minor changes
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -62,13 +65,10 @@ int Prec(char ch){
 
 int infixToPostfix(char* exp){
 	int i, k;
-
 	struct Stack* stack = createStack(strlen(exp));
 	if(!stack) 
 		return -1 ;
-
 	for (i = 0, k = -1; exp[i]; ++i){
-		
 		if (isOperand(exp[i]))
 			exp[++k] = exp[i];
 		
@@ -88,9 +88,7 @@ int infixToPostfix(char* exp){
 				exp[++k] = pop(stack);
 			push(stack, exp[i]);
 		}
-
 	}
-
 	while (!isEmpty(stack))
 		exp[++k] = pop(stack );
 

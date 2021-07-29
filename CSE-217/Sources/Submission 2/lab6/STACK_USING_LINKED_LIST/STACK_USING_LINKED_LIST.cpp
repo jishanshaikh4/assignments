@@ -1,3 +1,6 @@
+// Last edit: Jul 29, 2021, 18:32:54 IST
+// codefactor minor changes
+
 #include<iostream>
 #include<stdlib.h>
 #include<stdio.h>
@@ -10,7 +13,6 @@ struct node{
 };
 
 struct node * Insert(struct node *root,int data){
-
  struct node *n;
  n=(struct node*)malloc(sizeof(struct node));
  n->next=NULL;
