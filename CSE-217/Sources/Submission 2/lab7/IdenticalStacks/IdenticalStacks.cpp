@@ -1,3 +1,6 @@
+// Last edit: Jul 29, 2021, 18:32:54 IST
+// codefactor minor changes
+
 #include<stdio.h>
 #include<iostream>
 #include<stdlib.h>
@@ -58,10 +61,9 @@ int main()
 	printf("\nEnter the elements : ");
 	while(1)
 	{
-  	fflush(stdin);
-	printf("\nenter :");
-	scanf("%c",&c);
-
+		fflush(stdin);
+		printf("\nenter :");
+		scanf("%c",&c);
 		if( c=='('|| c== '{'|| c== '[')
 		{
 		  s.push(c);
@@ -92,8 +94,6 @@ int main()
 					flag = 0;
 				break;
 			}
-
-
 		}
 		if( flag == 0 || c == 'y')
 		 break;
